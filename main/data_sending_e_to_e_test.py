@@ -30,7 +30,7 @@ TRACK_URL = os.path.join(DEFAULT_HOST, 'rest/track')
 def send_data(*, datafile):
     username, password, account_id = register()
     data = read_data(filename=datafile)
-    track_id = init_transmission(data=next(data), account_id=account_id, username=username, password=password)
+    track_id = init_transmission(data=next(data), username=username, password=password)
     auth = HTTPBasicAuth(username, password)
     locations = []
     for message in send_loop(data, auth=auth, track_id=track_id):

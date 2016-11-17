@@ -1,4 +1,4 @@
-# E2E test
+# Integration test
 
 To run test you simply need to run:
 <br/>
@@ -10,4 +10,5 @@ To run test you simply need to run:
 <br/>
 
 The result of test is drown map of two trajectories - blue native and green filtered.
-# integrationTest
+
+* It is assumed that you have installed numpy and matplotlib as well as modules from `requirements.txt` file.
